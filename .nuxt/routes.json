@@ -1,0 +1,79 @@
+[
+  {
+    "name": "addHelp",
+    "path": "/addHelp",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\addHelp.vue",
+    "chunkName": "pages/addHelp",
+    "_name": "_bad9544e"
+  },
+  {
+    "name": "addHelp2",
+    "path": "/addHelp2",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\addHelp2.vue",
+    "chunkName": "pages/addHelp2",
+    "_name": "_a021e2ae"
+  },
+  {
+    "name": "final",
+    "path": "/final",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\final.vue",
+    "chunkName": "pages/final",
+    "_name": "_58c89d8d"
+  },
+  {
+    "name": "help",
+    "path": "/help",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\help.vue",
+    "chunkName": "pages/help",
+    "_name": "_17d9ce0c"
+  },
+  {
+    "name": "help2",
+    "path": "/help2",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\help2.vue",
+    "chunkName": "pages/help2",
+    "_name": "_e330a0b0"
+  },
+  {
+    "name": "helpFInal",
+    "path": "/helpFInal",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\helpFInal.vue",
+    "chunkName": "pages/helpFInal",
+    "_name": "_6f7693ec"
+  },
+  {
+    "name": "helpNoReg",
+    "path": "/helpNoReg",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\helpNoReg.vue",
+    "chunkName": "pages/helpNoReg",
+    "_name": "_8b35b22e"
+  },
+  {
+    "name": "main",
+    "path": "/main",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\main.vue",
+    "chunkName": "pages/main",
+    "_name": "_22a55372"
+  },
+  {
+    "name": "reg",
+    "path": "/reg",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\reg.vue",
+    "chunkName": "pages/reg",
+    "_name": "_63b02d2a"
+  },
+  {
+    "name": "registration",
+    "path": "/registration",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\registration.vue",
+    "chunkName": "pages/registration",
+    "_name": "_eb70f51c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\nurtu\\\\Desktop\\\\helpeachother\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1379f6e9"
+  }
+]
