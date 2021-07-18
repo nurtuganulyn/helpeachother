@@ -22,11 +22,23 @@
       <h2>Подать объявление</h2>
       <div class="reg-form">
         <a>Прикрепите фото</a>
-         <button class="upload-input">
-           Выберите фото
-         </button>
-        <div class="image">
-          <p>Или перетащите фото сюда, чтобы прикрепить...</p>
+<!--         <button onclick="$('.file-upload-input').trigger( 'click' )" class="upload-input">-->
+<!--           Выберите фото-->
+<!--         </button>-->
+<!--&lt;!&ndash;        <div class="image">&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>Или перетащите фото сюда, чтобы прикрепить...</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        <input type="file" accept="image/*" @change=onFileChange />-->
+        <button class="upload-input"  @click="onPickFile">Выберите фото</button>
+        <input
+            type="file"
+            style="display: none"
+            ref="fileInput"
+            accept="image/*"
+            @change="onFileChange" />
+        <div class="image" id="preview">
+          <p v-if="!image">Или перетащите фото сюда, чтобы прикрепить...</p>
+          <img class="image-size" v-if="image" :src="image" />
         </div>
       </div>
       <div class="reg-form-send">
@@ -52,7 +64,22 @@ export  default {
     prop:"show",
     event:"updateShow"
   },
+  data(){
+    return{
+      image:null
+    }
+  },
   methods:{
+    onPickFile () {
+      this.$refs.fileInput.click()
+    },
+    onFileChange(e) {
+      const file = e.target.files[0];
+      this.image = URL.createObjectURL(file);
+    },
+    chooseFiles() {
+      document.getElementById("fileUpload").click()
+    },
     send(){
       this.$router.push({path:'/final'})
     },
@@ -112,15 +139,22 @@ h2{
   border: 1px solid #FF9653;
   box-sizing: border-box;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 .image{
-  width: 550px;
-  height: 120px;
+  min-height: 120px;
+  min-width: 550px;
+  //width: 550px;
+  //height: 120px;
   margin-top: 20px;
   margin-bottom: 73px;
   background: #FFFFFF;
   border: 1px dashed #FF9653;
   box-sizing: border-box;
   border-radius: 10px;
+}
+.image-size{
+  //width: 550px;
+  //height: 120px;
 }
 </style>
